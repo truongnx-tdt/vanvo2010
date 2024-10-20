@@ -28,6 +28,9 @@
         </div>
       </div>
       <button><p>Nhấn vào đây đi em iu🖤</p></button>
+      <div style="display: none">
+        <audio id="audio" src="./assets/audios/aud.mp3"></audio>
+      </div>
       <div class="content">
         <i class="fa-solid fa-xmark"></i>
         <h1>Gửi em iu thích văn vở!</h1>
@@ -100,9 +103,12 @@
     });
     var btn = document.querySelector("button");
     var closeBtn = document.querySelector(".fa-xmark");
+    const audio = document.getElementById("audio");
     btn.addEventListener("click", () => {
       document.querySelector(".wrapper").classList.add("active");
       btn.style.display = "none";
+      audio.play();
+
     });
     closeBtn.addEventListener("click", () => {
       document.querySelector(".wrapper").classList.remove("active");
