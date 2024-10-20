@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/icons/heart-png-38796.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gửi Hảo Iu❤</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="loader">
+        <div class="cardHover">
+          <div class="inner one" style="--i: 1"></div>
+          <div class="inner two" style="--i: 1"></div>
+          <div class="inner three" style="--i: 1"></div>
+          <div class="box-heart">
+            <div class="heart"></div>
+          </div>
+        </div>
+      </div>
+      <button><p>Nhấn vào đây đi em iu🖤</p></button>
+      <div class="content">
+        <i class="fa-solid fa-xmark"></i>
+        <h1>Gửi em iu thích văn vở!</h1>
+        <div class="scroll">
+          <img
+            src="./assets/images/463184931_465610786015554_7742183270461707694_n.jpg"
+            alt="20-10"
+            style="width: 50%; border-radius: 5%"
+          />
+          <p>💞Chúc mừng ngày 20-10, cô gái đặc biệt thích văn vở!</p>
+          <br />
+          <p>
+            Không biết hôm nay có bao nhiêu người đã nói với em rằng em xinh
+            đẹp, nhưng anh vẫn muốn nói lại lần nữa, vì em thực sự tỏa sáng.
+          </p>
+          <img
+            src="./assets/images/z5947365269383_79060751b9370a8ccec7757d64e78c5e.jpg"
+            alt="20-10"
+            style="width: 50%; border-radius: 5%"
+          />
+          <p>
+            Từng nét tinh tế, từng ánh mắt khiến anh không thể không ngưỡng mộ.
+          </p>
+          <br />
+          <img
+            src="./assets/images/z5947365269384_918ffb847ce34d80e2e70cdf57993c9c.jpg"
+            alt="20-10"
+            style="width: 50%; border-radius: 5%"
+          />
+          <p>
+            Em là một người đặc biệt, với tâm hồn như một cuốn sách mở ra vô số
+            điều thú vị.
+          </p>
+          <img
+            src="./assets/images/z5947436742184_6c830f35664b2c2918ad409d432b4393.jpg"
+            alt="20-10"
+            style="width: 50%; border-radius: 5%"
+          />
+          <p>
+            Em là một người vừa mạnh mẽ, vừa dịu dàng, và điều đó thật cuốn hút.
+          </p>
+          <img
+            src="./assets/images/z5947436748089_68daebf9256f477605592fe63c6230f5.jpg"
+            alt="20-10"
+            style="width: 50%; border-radius: 5%"
+          />
+          <br />
+          <p>
+            Chúc em một ngày ngập tràn niềm vui và những điều tuyệt vời. Hy vọng
+            rằng, anh cũng sẽ có cơ hội để mang đến một chút gì đó đặc biệt cho
+            ngày của em!
+          </p>
+          <img
+            src="./assets/images/z5947436750858_06205cec78bfa5b5d07b86cbfd7fac60.jpg"
+            alt="20-10"
+            style="width: 50%; border-radius: 5%"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".wrapper"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.25,
+      gyroscopeMinAngleX: -45,
+    });
+    var btn = document.querySelector("button");
+    var closeBtn = document.querySelector(".fa-xmark");
+    btn.addEventListener("click", () => {
+      document.querySelector(".wrapper").classList.add("active");
+      btn.style.display = "none";
+    });
+    closeBtn.addEventListener("click", () => {
+      document.querySelector(".wrapper").classList.remove("active");
+      btn.style.display = "block";
+    });
+  </script>
+</html>
